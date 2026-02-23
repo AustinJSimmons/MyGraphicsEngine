@@ -1,5 +1,7 @@
 # Prerequisites
 *.d
+# Ignore bash script files
+*.sh
 
 # Compiled Object files
 *.slo

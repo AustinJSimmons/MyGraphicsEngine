@@ -16,3 +16,6 @@ add_executable(MyEngine src/main.cpp)
 
 # Link Libraries (Specific to macOS Frameworks)
 target_link_libraries(MyEngine GLEW::GLEW glfw "-framework OpenGL" "-framework Cocoa" "-framework IOKit")
+
+# Copy shaders to the build directory automatically
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/shaders DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
